@@ -13,6 +13,7 @@ import javax.persistence.Id;
 @Getter
 @Setter
 @NoArgsConstructor
+
 public class Tag {
     // klasa wyszukująca oferty pracy po danym tagu -> słowie kluczowym, nazwie stnowiska
 
