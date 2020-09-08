@@ -21,6 +21,10 @@ public class Tag {
     @GeneratedValue(strategy = GenerationType.IDENTITY) // sposób generowania id i nie beda wspoldzielone przez kilka modeli
     private Integer id;
 
+    public Tag(String name) {
+        this.name = name;
+    }
+
     private String name;
 
     private String description;
