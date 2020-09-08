@@ -50,7 +50,9 @@ public class DataCommnadLineApp implements CommandLineRunner {
             } else {
                 tag = tagRepository.findByName(tagName).get();
             }
-            addJobDailyOffer(tag,website,"warszawa");
+            for (String city : cities) {
+                addJobDailyOffer(tag,website,city);
+            }
         }
     }
     private void addJobDailyOffer(Tag tag, Website website, String city){
@@ -68,4 +70,7 @@ public class DataCommnadLineApp implements CommandLineRunner {
             e.printStackTrace();
         }
     }
+
+
+
 }
