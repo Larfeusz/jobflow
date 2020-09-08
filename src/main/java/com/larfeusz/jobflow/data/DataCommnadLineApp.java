@@ -70,7 +70,4 @@ public class DataCommnadLineApp implements CommandLineRunner {
             e.printStackTrace();
         }
     }
-
-
-
 }
