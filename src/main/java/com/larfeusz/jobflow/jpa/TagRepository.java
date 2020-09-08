@@ -9,5 +9,4 @@ public interface TagRepository extends CrudRepository<Tag, Integer> {
 
     Optional<Tag> findByName(String name);
 
-
 }
