@@ -1,5 +1,7 @@
 package com.larfeusz.jobflow.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -25,10 +27,11 @@ public class Tag {
         this.name = name;
     }
 
+    @JsonProperty("nazwa") // jaka nazwa ma być wyświetlana w Jsonie
     private String name;
 
+    @JsonIgnore
     private String description;
-
 
 
 }
